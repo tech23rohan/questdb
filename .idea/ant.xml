@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AntConfiguration">
+    <!-- Primary build file -->
     <buildFile url="file://$PROJECT_DIR$/core/rust/intellij_triggers.xml" />
+
+    <!-- Additional build file for expanded functionality -->
+    <buildFile url="file://$PROJECT_DIR$/build.xml" />
+
+    <!-- Optional: Add any properties or tasks if necessary -->
+    <properties>
+      <!-- Define project-specific properties here if needed -->
+      <property name="project.dir" value="$PROJECT_DIR$" />
+    </properties>
+
+    <!-- Example target to run from IntelliJ IDEA -->
+    <target name="example-target">
+      <exec executable="echo">
+        <arg value="Hello, World!" />
+      </exec>
+    </target>
   </component>
 </project>
